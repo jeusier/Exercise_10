@@ -9,12 +9,12 @@ describe("SideBar", function() {
       designer_url : "http://danielmall.com/"
     };
 
-    var sideBar = new SideBar();
+    var sideBar = new SideBar(sample_data.design_name, sample_data.design_url, sample_data.designer_name, sample_data.designer_url);
 
-    var proper_html = '<li>\n\
+    var proper_html = '<li>\
   <a href="/220/" class="design-name">Garments</a>\n\
-  by\n\
-  <a href="http://danielmall.com/" class="designer-name">Dan Mall</a>\n\
+  by
+  <a href="http://danielmall.com/" class="designer-name">Dan Mall</a>
 </li>';
     
     expect(sideBar.render()).toBe(proper_html);

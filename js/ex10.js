@@ -13,27 +13,28 @@ function SideBar(design_name, design_url, designer_name, designer_url){
 	};
 }
 
-// sideBar_array = ["sideBar_1",
-// "sideBar_2",
-// "sideBar_3",
-// "sideBar_4",
-// "sideBar_5",
-// "sideBar_6",
-// "sideBar_7",
-// "sideBar_8"];
-// $("#side_bar").append("<li><a href='"+design_url+"' class='design-name'>"+design_name+"</a>	by <a href='"+designer_url+"' class='designer-name'>"+designer_name+"</a></li>");
-
 
 // define your ButtChanger class here
 
-// function ButtChanger(){
-// 	this.mouseover_butt = function(e){
+function ButtChanger(){
+	this.temp = null;
+	this.mouseover_butt = function(e){
+		// $(this).mouseover(function(){
+			temp = $(this).html();
+			$(this).html("Butt");
+		
+	};
+	this.mouseout_butt = function(e){
+		// $(this).mouseout(function(){
+			$(this).html(temp);
+		
+	};
 
-// 	};
-// 	this.mouseout_butt = function(e){
+	$(".actually_a_butt").mouseover(this.mouseover_butt);
+	$(".actually_a_butt").mouseout(this.mouseout_butt);
+}
 
-// 	};
-// }
+
 
 
 
@@ -44,15 +45,7 @@ function SideBar(design_name, design_url, designer_name, designer_url){
 // write your app launcher here
 $(document).ready(function(){
 
-	// var sidebarArray = [];
-	// for (var keys in Data.sidebar_objects){
-	// 	result = Data.sidebar_objects[keys];
-	// 	sidebarArray.push(result);
-	// 	SideBar.render(result);
-	// }
-
-	// console.log(Data.sidebar_objects[0]["design_name", "design_url"]);
-
+	
 	var objects = Data.sidebar_objects;
 
 	for (var i = 0; i < objects.length; i++){
@@ -65,8 +58,8 @@ $(document).ready(function(){
 		}
 
 
-
-	// var actually_a_butt = new ButtChanger();
+	var temp = "";
+	var buttChanger = new ButtChanger();
 
 
 
