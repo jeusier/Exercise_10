@@ -3,8 +3,8 @@ Data.sidebar_objects = [
   {
     design_name : "Garments",
     design_url : "/220/",
-    designer_name : "http://danielmall.com/",
-    designer_url : "Dan Mall"
+    designer_name : "Dan Mall",
+    designer_url : "http://danielmall.com/"
   },
   {
     design_name : "Steel",
