@@ -20,8 +20,8 @@ The **render()** method will output html formatted like this:
 * *whitespace is important here!*
 
 On document ready, create 8 instances of SideBar by looping through **Data.sidebar_objects**  
-* *bonus: store instances in a collection of some sort!*  
-* *bonus: refactor!*
+*&#42;bonus: store instances in a collection of some sort!*  
+*&#42;bonus: refactor!*
 
 ---
 
@@ -39,8 +39,8 @@ Then add a another event listener for 'mouseout' and the handler will be **ButtC
 **mouseover_butt(e)** : changes the text content to "Butt"  
 **mouseout_butt(e)**  : changes the text content back to it's original content 
 
-* *bonus: fade in/out*  
-* *extra bonus: bind an event to a key or a button to toggle all butt visibility*
+*&#42;bonus: fade in/out*  
+*&#42;extra bonus: bind an event to a key or a button to toggle all butt visibility*
 
 ![Butt Changer](http://images5.fanpop.com/image/photos/29200000/butt-scratcher-peter-griffin-29296463-265-200.jpg)
 
