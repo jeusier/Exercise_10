@@ -19,10 +19,10 @@ function SideBar(design_name, design_url, designer_name, designer_url){
 function ButtChanger(){
 	this.temp = null;
 	this.mouseover_butt = function(e){
-		// $(this).mouseover(function(){
+		
 			temp = $(this).html();
 			$(this).html("Butt");
-		
+			
 	};
 	this.mouseout_butt = function(e){
 		// $(this).mouseout(function(){
